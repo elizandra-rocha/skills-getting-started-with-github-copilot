@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const activityCard = document.createElement("div");
         activityCard.className = "activity-card";
 
+        // Calculate remaining spots based on the number of participants
         const spotsLeft = details.max_participants - details.participants.length;
 
         activityCard.innerHTML = `
